@@ -198,7 +198,7 @@
                <a class="nav-link" href="#" ><i class="fas fa-headset"> </i>    Liên hệ</a>
                <div class="dropdown-content">
                 <a class="dropdown-item" href="https://www.messenger.com/">Chat với tư vấn mua hàng</a>
-                <h6 class="dropdown-item" href="">CSKH: <a href="" class="btn-outline-info">+0343754517</a>  <i class="fas fa-angle-right"></i> </h6>
+                <h6 class="dropdown-item" href="">CSKH: <a href="" class="btn-outline-info">+84367606605</a>  <i class="fas fa-angle-right"></i> </h6>
                
           
               </div>
