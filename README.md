@@ -12,7 +12,7 @@
 Hệ thống “website bán linh kiện máy tính” là một hệ thống thương mại điện tử cơ bản được xây dựng bằng Laravel Framework, cho phép người dùng duyệt, tìm kiếm và mua các sản phẩm linh kiện máy tính. Ngoài ra, admin có thể quản lý sản phẩm, đơn hàng và người dùng.
 
 ---
-##🛠️ Công Nghệ
+## 🛠️ Công Nghệ
 Dự án sử dụng các công nghệ sau:
 - **Laravel Framework**
 - **PHP 8.x**
