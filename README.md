@@ -26,5 +26,5 @@ Dự án sử dụng các công nghệ sau:
 ### Sơ đồ khối
 ![Sơ đồ khối](https://github.com/user-attachments/assets/7c41868a-561f-4aa5-a20e-1ebb3156c71f)
 ### Sơ đồ chức năng
-![Sơ đồ chức năng](https://github.com/user-attachments/assets/3d5167fa-1696-4666-8669-dce4b30eebb6) 
+![Sơ đồ chức năng](https://github.com/user-attachments/assets/223548a8-c193-46c9-b5c7-2335b2a9f483)
 ## 📍 Sơ đồ thuật toán
