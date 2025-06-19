@@ -49,7 +49,7 @@ Dự án sử dụng các công nghệ sau:
 - **Giỏ hàng:**
   ![Image](https://github.com/user-attachments/assets/259bb4bc-b408-4bca-94b0-9d35a6f1f5a3)
 - **Đặt hàng:**  
-  ![Image](https://github.com/user-attachments/assets/a290a9c6-8343-42c9-9dfe-cb21672d0c72)|
+  ![Image](https://github.com/user-attachments/assets/a290a9c6-8343-42c9-9dfe-cb21672d0c72)
 
 ## DEMO dự án
 - video demo :https://youtu.be/Jm-tpP8lQS4
