@@ -1,52 +1,81 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
-        </div>
+    @extends('layout.user.app')
+    @section('content')
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('public/frontend/dangky/images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                <form class="login100-form validate-form" method="POST" action="{{ route('register') }}">
+                    {{ csrf_field() }}
+					<span style="color: #4A235A;" class="login100-form-title p-b-49">
+						ĐĂNG KÝ
+					</span>
 
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Vui lòng nhập vào tên hiển thị">
+						<span class="label-input100">Tên hiển thị</span>
+						<input class="input100" id="name" type="text" name="name" placeholder="Nhập vào Tên !" value="{{ old('name') }}" required autocomplete="name" autofocus>
+					
+						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Vui lòng nhập vào Email">
+						<span class="label-input100">Email</span>
+						<input class="input100" id="email" type="email" name="email"  placeholder="Nhập vào Email !" value="{{ old('email') }}" required autocomplete="email">
+						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+					<div class="wrap-input100 validate-input" data-validate="Vui lòng nhập mật khẩu">
+						<span class="label-input100">Mật khẩu</span>
+						<input class="input100"  name="password" id="password" type="password" placeholder="Nhập mật khẩu !" required autocomplete="new-password">
+						<span class="focus-input100" data-symbol="&#xf190;"></span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate="Vui lòng nhập lại mật khẩu">
+						<span class="label-input100">Mật khẩu</span>
+						<input class="input100" type="password" name="password_confirmation" id="password-confirm"  placeholder="Nhập lại mật khẩu !" required autocomplete="new-password">
+						<span class="focus-input100" data-symbol="&#xf190;"></span>
+					</div>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button type="submit" class="login100-form-btn">
+								Đăng Ký
+							</button>
+						</div>
+                    </div>
+                    	<div class="flex-col-c p-t-50">
+						<span class="txt1 p-b-17">
+							Đã có tài khoản ?
+						</span>
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
+						<a href="{{ route('login') }}" class="txt2">
+							Đăng nhập ngay
+						</a>
+					</div>
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
+					<div class="txt1 text-center p-t-54 p-b-20">
+						<span>
+							Hoặc đăng nhập bằng
+						</span>
+					</div>
 
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+					<div class="flex-c-m">
+						<a href="#" class="login100-social-item bg1">
+							<i class="fa fa-facebook"></i>
+						</a>
 
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
+						<a href="#" class="login100-social-item bg2">
+							<i class="fa fa-twitter"></i>
+						</a>
 
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
+						<a href="#" class="login100-social-item bg3">
+							<i class="fa fa-google"></i>
+						</a>
+                    </div>
+                    
 
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
+				</form>
+			</div>
+		</div>
+	</div>
+	
 
-            <x-primary-button class="ml-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+	<div id="dropDownSelect1"></div>
+	@endsection

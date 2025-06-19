@@ -1,47 +1,78 @@
-<x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+    @extends('layout.user.app')
+    @section('content')
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('/frontend/dangky/images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                <form class="login100-form validate-form" method="post" action="{{ route('login') }}">
+                    {{ csrf_field() }}
+					<span style="color: #4A235A;"  class="login100-form-title p-b-49">
+						ĐĂNG NHÂP
+					</span>
 
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Vui lòng nhập vào Email">
+						<span class="label-input100">Email</span>
+						<input class="input100" type="email" name="email" placeholder="Nhập vào Email !" value="{{ old('email') }}">
+						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+					<div class="wrap-input100 validate-input" data-validate="Vui lòng nhập mật khẩu">
+						<span class="label-input100">Mật khẩu</span>
+						<input class="input100" type="password" name="password" id="password" type="password" placeholder="Nhập mật khẩu !">
+						<span class="focus-input100" data-symbol="&#xf190;"></span>
+					</div>
+					
+					<div class="text-right p-t-8 p-b-31">
+						@if (Route::has('password.request'))
+						<a href="{{ route('password.request') }}">
+							Quên mật khẩu ?
+						</a>
+						 @endif
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button type="submit" class="login100-form-btn">
+								Đăng nhập
+							</button>
+						</div>
+					</div>
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
+					<div class="txt1 text-center p-t-54 p-b-20">
+						<span>
+							Hoặc đăng nhập bằng
+						</span>
+					</div>
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
+					<div class="flex-c-m">
+						<a href="#" class="login100-social-item bg1">
+							<i class="fa fa-facebook"></i>
+						</a>
 
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-            </label>
-        </div>
+						<a href="#" class="login100-social-item bg2">
+							<i class="fa fa-twitter"></i>
+						</a>
 
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
+						<a href="#" class="login100-social-item bg3">
+							<i class="fa fa-google"></i>
+						</a>
+					</div>
 
-            <x-primary-button class="ml-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+					<div class="flex-col-c p-t-60">
+						<span class="txt1 p-b-17">
+							Hoặc đăng kí tài khoản
+						</span>
+
+						<a href="{{ route('register') }}" class="txt2">
+							Đăng kí
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	@endsection

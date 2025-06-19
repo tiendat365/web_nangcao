@@ -51,9 +51,9 @@
   <div class="container mt-3 mb-3">
     <h5 class="text-uppercase font-weight-bold">About Website</h5>
     <p class="mb-0">Contact to:</p>
-    Email:  trantiendat030605@gmail.com <br>
+    Email:  nguyenthanhtrung@gmail.com <br>
             <br>
-       Phone:  0367606605
+       Phone:  +84343754517
 
 
       <!-- Social buttons -->
@@ -80,8 +80,8 @@
         </div>
       
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-2">© 2025 Copyright:
-          <a href="http://sict.udn.vn/" style="color: white;"> Trần Tiên Đạt </a>
+        <div class="footer-copyright text-center py-2">© 2023 Copyright:
+          <a href="http://sict.udn.vn/" style="color: white;"> Nguyễn Thành Trung</a>
         </div>
         <!-- Copyright -->
       
