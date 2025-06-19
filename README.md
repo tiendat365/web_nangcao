@@ -44,9 +44,12 @@ Dự án sử dụng các công nghệ sau:
   ![Image](https://github.com/user-attachments/assets/92b20035-3f73-4f2e-bd4a-0e09092918f3)
 - **Đăng nhập:**  
   ![Image](https://github.com/user-attachments/assets/f1a2d9d8-9098-41ed-9ee6-d600f63192a2)
-  | Sản phẩm | Giỏ hàng | Đặt hàng |
-  |----------|----------|------------|
-  |![Image](https://github.com/user-attachments/assets/3550db46-8344-422c-acdb-b9fc2b1c89c9)|![Image](https://github.com/user-attachments/assets/259bb4bc-b408-4bca-94b0-9d35a6f1f5a3)|![Image](https://github.com/user-attachments/assets/a290a9c6-8343-42c9-9dfe-cb21672d0c72)|
+- **Sản phẩm:**
+  ![Image](https://github.com/user-attachments/assets/3550db46-8344-422c-acdb-b9fc2b1c89c9)
+- **Giỏ hàng:**
+  ![Image](https://github.com/user-attachments/assets/259bb4bc-b408-4bca-94b0-9d35a6f1f5a3)
+- **Đặt hàng:**  
+  ![Image](https://github.com/user-attachments/assets/a290a9c6-8343-42c9-9dfe-cb21672d0c72)|
 
 ## DEMO dự án
 - video demo :https://youtu.be/Jm-tpP8lQS4
