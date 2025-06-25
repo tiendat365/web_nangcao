@@ -54,7 +54,7 @@ Dự án sử dụng các công nghệ sau:
 ## 🔐 Bảo mật
 - **Sử dụng @CSRF Token:**
   
-  ![Image](https://github.com/user-attachments/assets/cfa92317-4af8-478e-95d8-502699304572)
+  ![Image](https://github.com/user-attachments/assets/a65729cf-fb24-4844-84c2-2a7e16937e2a)
 - **Chống XSS hiển thị dữ liệu ra giao diện.:**
   
   ![Image](https://github.com/user-attachments/assets/645584ae-eefc-4942-a7e8-19f69134105f)
