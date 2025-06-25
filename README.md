@@ -38,6 +38,32 @@ Dự án sử dụng các công nghệ sau:
 - **CRUD Sản phẩm (Admin):**  
   ![Admin CRUD](https://github.com/user-attachments/assets/51f00237-19f6-4da0-9032-147f741cf752)
 
+## 💻 Một số đoạn mã chính
+
+- **Model – Order**
+  
+  ![Image](https://github.com/user-attachments/assets/08a3e24b-6cee-445c-9622-6614b091e07b)
+- **Model – Product**
+  
+  ![Image](https://github.com/user-attachments/assets/56e62ec6-b4ad-4406-815e-90026bdbf209)
+- **Model – User**
+  
+  ![Image](https://github.com/user-attachments/assets/31ba5c43-4d84-4dc1-babf-336613d10f39)
+
+  
+## 🔐 Bảo mật
+- **Sử dụng @CSRF Token:**
+  
+  ![Image](https://github.com/user-attachments/assets/cfa92317-4af8-478e-95d8-502699304572)
+- **Chống XSS hiển thị dữ liệu ra giao diện.:**
+  
+  ![Image](https://github.com/user-attachments/assets/645584ae-eefc-4942-a7e8-19f69134105f)
+- **Session & Cookies:**
+  
+  ![Image](https://github.com/user-attachments/assets/d3574318-da9c-46f7-8e56-2344a4f0b9e1)
+- **SQL Injection Prevention:**
+  
+  ![Image](https://github.com/user-attachments/assets/db8e2d63-e4ea-4961-8b0e-ceaf0812bc8e)
 ## 🔳 Một số hình ảnh giao diện chính
 
 - **Trang chủ hiển thị:**
