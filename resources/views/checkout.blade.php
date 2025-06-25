@@ -19,7 +19,7 @@
    <h3 style="font-weight: bold; color: #4A235A;">Thông tin khách hàng</h3>
    <div class="row">
       <form action="{{ url('Check-Out') }}" method="post" enctype="multipart/form-data">
-         {{ csrf_field() }}
+         @csrf
          <div class="col-sm-12 mt-3">
             <div class="row">
                <div class="col-sm-8">
